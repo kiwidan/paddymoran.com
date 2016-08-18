@@ -1,0 +1,74 @@
+@mixin half-width() {
+    display: inline-block;
+    float: left;
+    width: calc(50% - 15px);
+    margin-top: 0;
+
+    &:last-child {
+        margin-left: 30px;
+
+        // Remove the margin for mobile
+        @media (max-width: $mobile-width) {
+            margin: 0;
+            margin-top: 15px;
+        }
+    }
+
+    // Stack the two divs when in mobile view
+    @media (max-width: $mobile-width) {
+        margin: 0;
+        width: 100%;
+        padding-top: 15px;
+
+        &:last-child {
+            padding-top: 30px;
+        }
+    }
+}
+
+.contact-container p, .contact-links {
+    @include half-width();
+}
+
+.contact-link {
+    background: #eaeaea;
+    display: block;
+    height: 70px;
+    margin-top: 15px;
+    vertical-align: middle;
+    line-height: 70px;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-decoration: none;
+    overflow: hidden;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    i {
+        background: black;
+        color: white;
+        height: 70px;
+        width: 70px;
+        float: left;
+        font-size: 1.8em;
+        vertical-align: middle;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    .contact-link-text {
+        margin-left: 25px;
+    }
+
+    // Hide contact link icon for small screens
+    @media (max-width: $small-mobile-width) {
+        border-left: 6px solid black;
+        
+        i {
+            display: none;
+        }
+    }
+}
+

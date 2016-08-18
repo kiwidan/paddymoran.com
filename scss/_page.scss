@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    min-width: 330px;
+}
+
+.container {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 62%;
+}
+
+@media (max-width: $tablet-width) {
+    .container {
+        width: $content-width-tablet;
+    }
+}
