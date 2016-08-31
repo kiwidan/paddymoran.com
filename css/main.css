@@ -156,7 +156,9 @@ footer {
   font-weight: 300;
   font-size: 1.2em;
   text-decoration: none;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0 2px 10px -3px rgba(50, 50, 50, 0.5);
+  border-radius: 2px; }
   .contact-link:first-child {
     margin-top: 0; }
   .contact-link i {
