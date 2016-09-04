@@ -31,7 +31,8 @@ html, body {
 .container {
   margin: 0 auto;
   margin-bottom: 60px;
-  width: 62%; }
+  width: 62%;
+  max-width: 1250px; }
 
 @media (max-width: 1250px) {
   .container {
@@ -68,7 +69,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  letter-spacing: .04em; }
+  letter-spacing: .04em;
+  max-width: 1250px; }
   .hero a {
     color: white;
     text-decoration: none; }

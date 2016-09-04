@@ -8,6 +8,7 @@ html, body {
     margin: 0 auto;
     margin-bottom: 60px;
     width: 62%;
+    max-width: $max-container-width;
 }
 
 @media (max-width: $tablet-width) {
