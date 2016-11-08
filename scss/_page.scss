@@ -9,10 +9,8 @@ html, body {
     margin-bottom: 60px;
     width: 62%;
     max-width: $max-container-width;
-}
 
-@media (max-width: $tablet-width) {
-    .container {
+    @media (max-width: $tablet-width) {
         width: $content-width-tablet;
     }
 }

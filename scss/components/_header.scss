@@ -15,63 +15,64 @@ header {
     @media (max-width: $small-mobile-width) {
         font-size: 12px;
     }
-}
-
-.hero {
-    font-size: 2em;
-    text-align: center;
-    text-shadow: 2px 2px 3px $opaque-gray;
-    position: relative;
-    width: 62%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    letter-spacing: .04em;
-    max-width: $max-container-width;
-
-    a {
-        color: white;
-        text-decoration: none;
-    }
-
-    h1, h2 {
-        font-weight: 700;
-        margin: 5px;
-    }
-
-    h1 {
-        font-size: 1.9em;
-        letter-spacing: .1em;
-    }
-
-    h2 {
-        font-size: .8em;
-        font-weight: 300;
-        border: none;
-        padding: 0;
-    }
-
-    .hero-text {
-        border-top: 4px solid white;
-        border-bottom: 4px solid white;
-        padding: 30px 15px;
-    }
-
-    .hero-social-links {
-        margin-top: 15px;
-        font-size: 1.2em;
+    
+    .hero {
+        font-size: 2em;
+        text-align: center;
+        text-shadow: 2px 2px 3px $opaque-gray;
+        position: relative;
+        width: 62%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        letter-spacing: .04em;
+        max-width: $max-container-width;
 
         a {
             color: white;
-            padding: 8px;
+            text-decoration: none;
         }
 
-        @media (max-width: $small-mobile-width) {
-            font-size: 1.5em;
+        h1, h2 {
+            font-weight: 700;
+            margin: 5px;
         }
-    }
 
-    @media (max-width: $tablet-width) {
-        width: $content-width-tablet;
+        h1 {
+            font-size: 1.9em;
+            letter-spacing: .1em;
+        }
+
+        h2 {
+            font-size: .8em;
+            font-weight: 300;
+            border: none;
+            padding: 0;
+        }
+
+        .hero-text {
+            border-top: 4px solid white;
+            border-bottom: 4px solid white;
+            padding: 30px 15px;
+        }
+
+        .hero-social-links {
+            margin-top: 15px;
+            font-size: 1.2em;
+
+            a {
+                color: white;
+                padding: 8px;
+            }
+
+            @media (max-width: $small-mobile-width) {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: $tablet-width) {
+            width: $content-width-tablet;
+        }
     }
 }
+

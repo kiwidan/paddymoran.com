@@ -12,11 +12,11 @@ p {
 a {
     color: #1D538C;
     text-decoration: none;
-}
 
-a:hover {
-    color: #1D538C;
-    text-decoration: underline;
+    &:hover {
+        color: #1D538C;
+        text-decoration: underline;
+    }
 }
 
 h2 {
