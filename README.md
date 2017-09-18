@@ -1,8 +1,8 @@
-#My personal website
+# My personal website
 
 paddymoran.nz
 
-##Install
+## Install
 
 1. Clone repo `git clone ...`
 2. Install the development dependancies `npm install`
