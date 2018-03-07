@@ -1,10 +1,92 @@
-// Generic imports
-@import "variables";
-@import "typography";
-@import "page";
-@import "utilities";
+/**
+ * Variables
+ */
+// Fonts
+$default-font: 'Lato', sans-serif;
 
-// Components
+// Breakpoints
+$max-container-width: 1250px;
+$tablet-width: 1250px;
+$mobile-width: 1000px;
+$small-mobile-width: 430px;
+
+// Widths & paddings
+$content-width-tablet: 85%;
+$header-footer-padding: 75px;
+
+// Colours
+$opaque-gray: rgba(50, 50, 50, .35);
+
+/**
+ * Page
+ */
+html, body {
+    margin: 0;
+    height: 100%;
+    min-width: 330px;
+}
+
+.container {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 62%;
+    max-width: $max-container-width;
+
+    @media (max-width: $tablet-width) {
+        width: $content-width-tablet;
+    }
+}
+
+/**
+ * Typography
+ */
+body {
+    font-family: $default-font;
+}
+
+p {
+    font-size: 1.18em;
+    letter-spacing: .025em;
+    line-height: 1.5em;
+    font-size: 1.25em;
+}
+
+a {
+    color: #1D538C;
+    text-decoration: none;
+
+    &:hover {
+        color: #1D538C;
+        text-decoration: underline;
+    }
+}
+
+h2 {
+    padding: 0px 15px;
+    font-size: 2.2em;
+    margin: 0 -15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/**
+ * Utilities
+ */
+@mixin clearfix() { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.clearfix:after {
+    @include clearfix();
+}
+
+/**
+ * Components
+ */
 @import "components/header";
-@import "components/footer";
 @import "components/contact";
