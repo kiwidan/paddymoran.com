@@ -28,7 +28,7 @@ html, body {
 
 .container {
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
     width: 62%;
     max-width: $max-container-width;
 
@@ -90,3 +90,10 @@ h2 {
  */
 @import "components/header";
 @import "components/contact";
+
+/**
+ * Footer
+ */
+footer {
+    margin-bottom: 45px;
+}
