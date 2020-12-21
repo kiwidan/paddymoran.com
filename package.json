@@ -1,22 +1,27 @@
 {
-  "name": "paddymoran.nz",
+  "name": "paddymoran.com",
   "version": "1.0.0",
   "description": "My personal website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "./node_modules/.bin/gulp watch",
+    "build-prod": "./node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/paddymoran/paddymoran.nz"
+    "url": "github.com/paddymoran/paddymoran.com"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2"
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
   }
 }
