@@ -1,10 +1,10 @@
 # My personal website
 
-paddymoran.com
+[paddymoran.com](https://paddymoran.com)
 
-## Install
+## Local Development & Production Installs
 
-1. Clone repo `git clone git@github.com:kiwidan/paddymoran.com.git`
-2. Install the development dependancies `npm install`
-
-**Note:** There is no need to install the development dependancies in production (no need to run `npm install`)
+1. Clone the repo `git clone git@github.com:kiwidan/paddymoran.com.git`
+2. Install the dependancies `npm install`
+3. Build for development (with live reload) `npm run watch`
+4. OR: Build for production `npm run build-prod`
