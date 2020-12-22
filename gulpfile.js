@@ -11,10 +11,6 @@ const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 
-
-var cssDest    = './css';
-var scssSource = './scss/**/*.scss';
-
 const makePaths = distPath => ({
   dist: distPath,
 
@@ -67,7 +63,7 @@ function copyStatic() {
 
 // Watch files
 function watchFiles() {
-  gulp.watch(paths.static.src, copyStatic);    // Static
+  gulp.watch(paths.static.src, copyStatic);   // Static
   gulp.watch(paths.sass.watch, processSass);  // Sass (styles)
 }
 
