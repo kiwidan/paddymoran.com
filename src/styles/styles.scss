@@ -1,99 +1,72 @@
-/**
- * Variables
- */
-// Fonts
-$default-font: 'Lato', sans-serif;
-
-// Breakpoints
-$max-container-width: 1250px;
-$tablet-width: 1250px;
-$mobile-width: 1000px;
-$small-mobile-width: 430px;
-
-// Widths & paddings
-$content-width-tablet: 85%;
-$header-footer-padding: 75px;
-
-// Colours
-$opaque-gray: rgba(50, 50, 50, .35);
-
-/**
- * Page
- */
 html, body {
-    margin: 0;
-    height: 100%;
-    min-width: 330px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+p, a {
+  line-height: 1.4em;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  max-width: 800px;
+  color: hsl(0, 0%, 85%);
+  text-shadow: -1px 1px 2px black; 
 }
 
 .container {
-    margin: 0 auto;
-    margin-bottom: 45px;
-    width: 62%;
-    max-width: $max-container-width;
+  margin: 0 120px;
 
-    @media (max-width: $tablet-width) {
-        width: $content-width-tablet;
+  @media (max-width: 1200px) { margin: 0 60px; }
+  @media (max-width: 700px) { margin: 0 22px; }
+}
+
+
+.hero-title {
+  font-family: 'Lora', serif;
+}
+
+header {
+  background-color: hsla(4, 44%, 8%, 0.5);
+  background-image: url('../images/background.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  
+  .hero {
+    height: 100%;
+
+    .hero-content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .hero-title {
+        font-size: 80px;
+      }
     }
-}
 
-/**
- * Typography
- */
-body {
-    font-family: $default-font;
-}
+    .hero-link {
+      display: block;
+      height: 36px;
 
-p {
-    font-size: 1.18em;
-    letter-spacing: .025em;
-    line-height: 1.5em;
-    font-size: 1.25em;
-}
-
-a {
-    color: #1D538C;
-    text-decoration: none;
-
-    &:hover {
-        color: #1D538C;
-        text-decoration: underline;
+      a {
+        color: #BA433D;
+        
+        &:hover {
+          color: lighten(#BA433D, 8%);
+        }
+      }
     }
-}
-
-h2 {
-    padding: 0px 15px;
-    font-size: 2.2em;
-    margin: 0 -15px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/**
- * Utilities
- */
-@mixin clearfix() { 
-   content: " ";
-   display: block; 
-   height: 0; 
-   clear: both;
-}
-
-.clearfix:after {
-    @include clearfix();
-}
-
-/**
- * Components
- */
-@import "components/header";
-@import "components/contact";
-
-/**
- * Footer
- */
-footer {
-    padding-bottom: 25px;
+  }
 }
